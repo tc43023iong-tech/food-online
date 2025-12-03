@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Fun English Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Fredoka', 'sans-serif'],
+              retro: ['VT323', 'monospace'],
+            },
+            colors: {
+              retro: {
+                bg: '#FFF8E1', // Cream
+                pink: '#FF9AA2',
+                mint: '#B5EAD7',
+                blue: '#A0C4FF',
+                yellow: '#FDFFB6',
+                purple: '#E0BBE4',
+                dark: '#4A403A',
+                accent: '#FF6F61'
+              }
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px rgba(74, 64, 58, 1)',
+              'retro-sm': '2px 2px 0px 0px rgba(74, 64, 58, 1)',
+              'retro-hover': '2px 2px 0px 0px rgba(74, 64, 58, 1)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #A0C4FF;
+        background-image: radial-gradient(#ffffff 20%, transparent 20%),
+          radial-gradient(#ffffff 20%, transparent 20%);
+        background-position: 0 0, 50px 50px;
+        background-size: 100px 100px;
+      }
+      .shake {
+        animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+      }
+      @keyframes shake {
+        10%, 90% { transform: translate3d(-1px, 0, 0); }
+        20%, 80% { transform: translate3d(2px, 0, 0); }
+        30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+        40%, 60% { transform: translate3d(4px, 0, 0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
